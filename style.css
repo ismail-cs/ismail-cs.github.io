@@ -11618,6 +11618,7 @@ html.is-scroll-disabled body {
     background-size: cover;  /* This ensures the SVG image covers the entire element. */
     background-repeat: no-repeat;  /* Prevents the image from repeating. */
     background-attachment: fixed;  /* This makes the background fixed as the page scrolls. */
+    background-position: center;
     /* You can also add more properties like background-position or background-color as needed. */
 }
 
