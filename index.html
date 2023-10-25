@@ -15,6 +15,17 @@
 </script>
 
 
+      <script>
+  // Disable the "F12" key and "Ctrl+Shift+I" shortcut
+  window.addEventListener('keydown', function (e) {
+    if ((e.key == 'F12' || e.ctrlKey && e.shiftKey && e.key == 'I')) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+
+
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
