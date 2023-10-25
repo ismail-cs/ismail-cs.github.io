@@ -11602,12 +11602,26 @@ html.is-scroll-disabled body {
     width: 0
 }
 
+/*
+
 .bg-triangles {
     background-image: url(../img/triangles-top.c8c742fc.svg), url(../img/triangles-bottom.7bacc849.svg), linear-gradient(145.44deg, #f2f4fa, #fafbfc);
     background-position: 0 0, 100% 100%;
     background-repeat: no-repeat;
     background-size: inherit
 }
+
+*/
+
+.bg-triangles {
+    background-image: url('img/rainbow-vortex2.svg');
+    background-size: cover;  /* This ensures the SVG image covers the entire element. */
+    background-repeat: no-repeat;  /* Prevents the image from repeating. */
+    background-attachment: fixed;  /* This makes the background fixed as the page scrolls. */
+    /* You can also add more properties like background-position or background-color as needed. */
+}
+
+
 
 @media only screen and (max-width:580px) {
     .bg-triangles {
