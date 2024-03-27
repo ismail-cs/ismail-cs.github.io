@@ -11677,6 +11677,19 @@ h6 {
     }
 }
 
+
+.title--htt {
+    font-size: 1rem;
+    margin-bottom: 1rem
+}
+
+@media only screen and (max-width:580px) {
+    .title--htt {
+        font-size: 0.75rem
+    }
+}
+
+
 .title--h4 {
     font-size: 1.125rem
 }
