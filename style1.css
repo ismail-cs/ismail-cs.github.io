@@ -13125,7 +13125,7 @@ screen and (-ms-high-contrast:active) {
 
 @media only screen and (max-width:768px) {
     .gallery-grid-two .gallery-grid__item {
-        width: 100%
+        width: 50%
     }
 }
 
