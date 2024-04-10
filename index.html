@@ -800,18 +800,36 @@ I enjoy learning new technologies and quickly adapting to new technology. I am l
                                        </div>
                                        
                                        <div>
-
+                                          
+                                          <!--
                                           <div class="select">
-                                             <span class="placeholder"> Certifications </span>
+                                             <span class="placeholder"> Certifications1 </span>
                                              <ul class="filter">
                                                 <li class="filter__item">Category</li>
+                                          -->
                                                 <!-- <li data-filter="*" class="filter__item"><a href="#filter" class="filter__link active"> All </a></li> -->
-                                                <li data-filter=".category-Certifications" class="filter__item active"><a href="#filter" class="filter__link"> Certifications </a></li>
-                                                <li data-filter=".category-Project" class="filter__item"><a href="#filter" class="filter__link"> Project </a></li>
+                                          <!--
+                                                <li data-filter=".category-Certifications" class="filter__item "><a href="#filter" class="filter__link"> Certifications2 </a></li>
+                                                <li data-filter=".category-Project" class="filter__item active"><a href="#filter" class="filter__link"> Project </a></li>
                                                 <li data-filter=".category-Badge" class="filter__item"><a href="#filter" class="filter__link"> Badge </a></li>
                                              </ul>
                                              <input type="hidden" name="changemetoo">
                                           </div>
+                                          -->
+
+                                          <div class="select">
+                                             <span class="placeholder"> Certifications </span>
+                                             <ul class="filter">
+                                                 <li class="filter__item">Category</li>
+                                                 <li data-filter=".category-Certifications" class="filter__item"><a href="#filter" class="filter__link"> Certifications </a></li>
+                                                 <li data-filter=".category-Project" class="filter__item"><a href="#filter" class="filter__link"> Project </a></li>
+                                                 <li data-filter=".category-Badge" class="filter__item"><a href="#filter" class="filter__link"> Badge </a></li>
+                                             </ul>
+                                             <input type="hidden" name="changemetoo">
+                                         </div>
+                                         
+                                         
+                                         
 
                                           <div class="gallery-grid-two js-grid js-filter-container" style="position: relative; height: 1669.06px;">
                                              <div class="gutter-sizer"></div>
@@ -1586,6 +1604,36 @@ I enjoy learning new technologies and quickly adapting to new technology. I am l
                });
             });
          </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const select = document.querySelector('.select');
+    const placeholder = select.querySelector('.placeholder');
+    const dropdown = select.querySelector('.filter');
+
+    // Toggle dropdown visibility
+    placeholder.addEventListener('click', function(event) {
+        dropdown.classList.toggle('is-open');
+        event.stopPropagation(); // Prevent event from bubbling up
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!select.contains(event.target)) {
+            dropdown.classList.remove('is-open');
+        }
+    });
+
+    // Prevent placeholder text from changing when dropdown items are clicked
+    dropdown.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (event.target.tagName === 'A') {
+            placeholder.textContent = event.target.textContent.trim();
+            dropdown.classList.remove('is-open');
+        }
+    });
+});
+</script>
 
 
      

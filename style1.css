@@ -13238,6 +13238,8 @@ screen and (-ms-high-contrast:active) {
     display: none
 }
 
+
+
 @media only screen and (max-width:768px) {
     .select {
         background-color: #f7f9fa;
@@ -14952,4 +14954,9 @@ select option {
 
 .llogo {
     margin-top: 24.5px;
+}
+
+
+.filter.is-open {
+    display: block;
 }
