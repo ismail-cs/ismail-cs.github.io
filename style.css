@@ -12574,6 +12574,8 @@ button:focus {
     }
 }
 
+
+
 .box__border {
     border: 2px solid #ebf0f2;
     border-radius: 20px
@@ -12585,6 +12587,8 @@ button:focus {
         padding: 1rem
     }
 }
+
+
 
 @media only screen and (max-width:991px) {
     .box-content {
@@ -13121,9 +13125,11 @@ screen and (-ms-high-contrast:active) {
 
 @media only screen and (max-width:768px) {
     .gallery-grid-two .gallery-grid__item {
-        width: 100%
+        width: 50%
     }
 }
+
+
 
 .gallery-grid__image-wrap {
     border-radius: 14px;
@@ -13149,6 +13155,8 @@ screen and (-ms-high-contrast:active) {
 .gallery-grid-two .gallery-grid__image-wrap {
     height: auto
 }
+
+
 
 .gallery-grid__image {
     border-radius: 10px;
@@ -13229,6 +13237,8 @@ screen and (-ms-high-contrast:active) {
 .select .placeholder {
     display: none
 }
+
+
 
 @media only screen and (max-width:768px) {
     .select {
@@ -14688,9 +14698,11 @@ select option {
     box-shadow: -4px 8px 24px rgba(0, 0, 0, .07)
 }
 
+
 .box__border {
     border-color: #33363d
 }
+
 
 .social__link {
     color: #fcfcfc
@@ -14942,4 +14954,9 @@ select option {
 
 .llogo {
     margin-top: 24.5px;
+}
+
+
+.filter.is-open {
+    display: block;
 }
